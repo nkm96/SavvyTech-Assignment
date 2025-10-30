@@ -1,10 +1,10 @@
-# Payesh-service
+# SavvyTech-service
+
+Material-UI (MUI) was used in this project to enhance the user interface and user experience.
 
 ## steps:
-1. unzip payesh-service.zip
-2. go to payesh-service folder
-3. open cmd or powershell and type: yarn add
-4. to run, type: yarn dev
+1. open cmd or powershell and type: yarn add (Kindly be patient :) )
+2. to run, type: yarn dev
 
 ## configurations:
 - you can config frontend server port in vite.config.ts 
