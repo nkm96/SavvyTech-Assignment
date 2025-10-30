@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: normal;
+    src:
+        url("./assets/fonts/yekanBakh/woff/YekanBakhFaNum-Regular.woff") format("woff"),
+        url("./assets/fonts/yekanBakh/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --commonBlack: #0e185f;
+}
+
+a,
+form,
+button,
+img,
+svg,
+h3 {
+    transition: all 200ms ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+    outline: none;
+    overflow: hidden;
+}
+*::-webkit-scrollbar {
+    /* background-color: ${({ theme }) =>
+              `${theme.palette.primary[theme.palette.mode]}33`}; */
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #9095a377;
+    width: 4px;
+    height: 4px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 100px;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #9095a3;
+}
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text !important;
+    /* -webkit-text-fill-color: #ffffff !important; */
+    transition: background-color 1000s ease-in-out 0s !important;
+    box-shadow: inset 0 0 20px 20px transparent !important;
+}
+
+* {
+    font-family: "YekanBakh";
+    outline: none;
+    overflow-wrap: break-word;
+    /* text-align: justify; */
+    scroll-behavior: smooth;
+    /* font-feature-settings: "ss02"; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-app-container {
+    min-width: calc(100vw - 0px);
+    max-width: calc(100vw - 0px);
+    min-height: calc(100vh - 0px);
+    max-height: calc(100vh - 0px);
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 0px; /* IMPORTANT 
+                                after change this value you must change depended values in config.ts file
+                                and
+                                min-max-width-height value here
+                   */
+    border: none; /* IMPORTANT 
+                                after change this value you must change depended values in config.ts file
+                  */
+}
+.gap-2 {
+    gap: 2px;
+}
+.gap-4 {
+    gap: 4px;
+}
+.gap-8 {
+    gap: 8px;
+}
+.gap-16 {
+    gap: 16px;
+}
+.gap-24 {
+    gap: 24px;
+}
+.gap-32 {
+    gap: 32px;
+}
+.gap-64 {
+    gap: 64px;
+}
+.d-f-j-c-a-c {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.d-f-j-c {
+    display: flex;
+    justify-content: center;
+}
+.d-f-a-c {
+    display: flex;
+    align-items: center;
+}
+.d-f-j-c-s-b {
+    display: flex;
+    justify-content: space-between;
+}
+.d-f-j-sb-a-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fd-c {
+    flex-direction: column;
+}
+.d-f-j-c-e {
+    display: flex;
+    justify-content: flex-end;
+}
+.d-f-j-c-s {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.disable {
+    pointer-events: none !important;
+    opacity: 0.4 !important;
+}
+
+.enable-form {
+    background-color: #aad8d3 !important;
+    border: 1px solid #a3c1ab !important;
+}
+
+.selected-form {
+    background-color: #5aafa5ff !important;
+    border: 1px solid #5aafa5ff !important;
+    /* height: 126px; */
+}
+
+.disable-form {
+    pointer-events: none !important;
+    opacity: 0.7 !important;
+}
+
+.view-mode {
+    pointer-events: none !important;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-data-img {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
